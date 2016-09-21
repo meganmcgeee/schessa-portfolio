@@ -1,14 +1,22 @@
 // Initialize Isotope
 
-var elem = document.querySelector('.grid');
-var iso = new Isotope( elem, {
-  // options
+// external js: isotope.pkgd.js
+
+var grid = document.querySelector('.grid');
+var iso = new Isotope( grid, {
   itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
+  masonry: {
+    columnWidth: 80
+  }
 });
 
-// element argument can be a selector string
-//   for an individual element
-var iso = new Isotope( '.grid', {
-  // options
+grid.addEventListener( 'click', function( event ) {
+  var target = event.target;
+  // only click on itemContent
+  if ( !target.classList.contains('grid-item-content') ) {
+    return;
+  }
+  var itemElem = target.parentNode;
+  itemElem.classList.toggle('is-expanded');
+  iso.layout();
 });
