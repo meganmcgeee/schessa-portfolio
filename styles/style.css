@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 200;
+  src: url("../fonts/Gilroy-Light.otf"); }
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  src: url("../fonts/Gilroy-ExtraBold.otf"); }
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 300;
+  src: url("../fonts/Merriweather.ttf"); }
+body {
+  font-family: 'Gilroy'; }
+
 #navigation {
   height: 155px;
   list-style-type: none;
@@ -6,7 +21,6 @@
   #navigation li {
     color: #000;
     display: inline-block;
-    font-family: 'Gilroy';
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 1.5px;
@@ -46,9 +60,6 @@ button {
 
 * {
   box-sizing: border-box; }
-
-body {
-  font-family: sans-serif; }
 
 .grid {
   max-width: 100%; }

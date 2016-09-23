@@ -1,5 +1,10 @@
-// Navigation
+@import 'fonts';
 
+body {
+  font-family: 'Gilroy';
+}
+
+// Navigation
 #navigation {
   height: 155px;
   list-style-type: none;
@@ -9,7 +14,6 @@
   li {
     color: #000;
     display: inline-block;
-    font-family: 'Gilroy';
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 1.5px;
@@ -61,10 +65,6 @@ button {
 // Grid Styling
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
 }
 
 // ---- grid ----
