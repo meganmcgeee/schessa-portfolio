@@ -97,12 +97,19 @@ button {
 * {
   box-sizing: border-box;
 }
+
+// popout styling
 #more-info {
   display: none;
   padding: 20px;
   background: #FFF;
   height: 500px;
   width:750px;
+}
+#close{
+  display: block;
+  padding: 5px;
+  text-align: right;
 }
 // ---- grid ----
 .grid {

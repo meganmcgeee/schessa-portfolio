@@ -12,8 +12,10 @@ Array.prototype.forEach.call(document.getElementsByClassName('grid-item'), funct
       div = document.getElementById('more-info');
            div.style.display = "block";
   }, false);
-
-  // gridItem.addEventListener('click', function() {
-  //     alert('Hello world again!!!');
-  // }, false);
 });
+
+function hide(obj) {
+    const close = document.getElementById('close');
+      close.style.display = 'none';
+
+}

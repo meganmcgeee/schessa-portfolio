@@ -85,6 +85,11 @@ button {
   height: 500px;
   width: 750px; }
 
+#close {
+  display: block;
+  padding: 5px;
+  text-align: right; }
+
 .grid {
   max-width: 100%; }
 
