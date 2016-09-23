@@ -1,9 +1,12 @@
+// Navigation
+
 #navigation {
   height: 155px;
   list-style-type: none;
   padding-top: 73px;
-  text-align: center; }
-  #navigation li {
+  text-align: center;
+
+  li {
     color: #000;
     display: inline-block;
     font-family: 'Gilroy';
@@ -12,92 +15,122 @@
     letter-spacing: 1.5px;
     list-style-type: none;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+  }
+}
 
 li {
-  padding-right: 150px; }
+  padding-right: 150px;
+}
 
 img {
-  height: 31.7px; }
+  height: 31.7px;
+}
 
+// Button Styling
 button {
   background-color: none;
   border: solid 5px #ffffff;
   height: 82.5px;
-  width: 295px; }
+  width: 295px;
+}
 
+// Section Styling
 .row {
   padding-bottom: 150px;
-  padding-top: 150px; }
+  padding-top: 150px;
+}
 
 .resume {
   background-color: #cfba2e;
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .contact {
-  background-color: #d8f4d5; }
+  background-color: #d8f4d5;
+}
 
 .circle {
   border: solid 5px #ffffff;
   border-radius: 50%;
   height: 82.5px;
   padding-right: 27.5px;
-  width: 82.5px; }
+  width: 82.5px;
+}
 
+// Grid Styling
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
+// ---- grid ----
 .grid {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+// clear fix
 .grid::after {
   clear: both;
   content: '';
-  display: block; }
+  display: block;
+}
 
+// ---- .grid-item pop----
 .grid-item {
   float: left;
   height: 383px;
-  width: 380px; }
-  .grid-item .big {
+  width: 380px;
+
+  .big {
     height: 110px;
-    width: 170px; }
+    width: 170px;
+  }
+}
 
 .first {
-  background-color: #faba00; }
+  background-color: #faba00;
+}
 
 .grey {
-  background-color: #4a4a4a; }
+  background-color: #4a4a4a;
+}
 
 .black {
-  background-color: #000; }
+  background-color: #000;
+}
 
 .light-grey {
-  background-color: #9b9b9b; }
+  background-color: #9b9b9b;
+}
 
 .grid-item--width2 {
-  width: 760px; }
+  width: 760px;
+}
 
 .grid-item--height2 {
-  height: 766px; }
+  height: 766px;
+}
 
+//Grid Item animate
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: .8s;
   -moz-transition-duration: .8s;
-  transition-duration: .8s; }
+  transition-duration: .8s;
+}
 
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
-  transition-property: height, width; }
+  transition-property: height, width;
+}
 
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
-  transition-property: transform, opacity; }
-
-/*# sourceMappingURL=style.css.map */
+  transition-property: transform, opacity;
+}
