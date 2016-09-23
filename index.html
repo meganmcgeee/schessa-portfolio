@@ -23,23 +23,41 @@
 
 <body>
   <!-- Navbar -->
-  <div id="page">
-    <ul id="navigation">
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">Resume</a></li>
-      <li>
-        <a href=""><img id="logo" src="logo.png"></img>
-        </a>
-      </li>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </div>
+      <nav class="navbar navbar-default" role="navigation">
+      	  <div class="container">
+  		    <!-- Brand and toggle get grouped for better mobile display -->
+  		    <div class="navbar-header">
+  		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+  		        <span class="sr-only">Toggle navigation</span>
+  		        <span class="icon-bar"></span>
+  		        <span class="icon-bar"></span>
+  		        <span class="icon-bar"></span>
+  		      </button>
+  		      <div class="navbar-brand navbar-brand-centered"><img src="logo.png" alt=""></div>
+  		    </div>
+
+  		    <!-- Collect the nav links, forms, and other content for toggling -->
+  		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+  		      <ul class="nav navbar-nav">
+  		        <li><a href="#">PORTFOLIO</a></li>
+  		        <li><a href="#">RESUME</a></li>
+  		      </ul>
+  		      <ul class="nav navbar-nav navbar-right">
+  		        <li><a href="#">ABOUT</a></li>
+  		        <li><a href="#">CONTACT</a></li>
+  		      </ul>
+  		    </div><!-- /.navbar-collapse -->
+  		  </div><!-- /.container-fluid -->
+  		</nav>
 
   <!-- Portfolio Grid -->
   <div class="grid">
     <div class="grid-item grid-item--width2 grid-item--height2 first">
-      <p>UNUM</p>
+      <div class="grid-item-content">
+        <p>UNUM</p>
+        <p>UX + Brand + Print</p>
+        <p>2016</p>
+      </div>
     </div>
     <div class="grid-item grey">
       <div class="grid-item-content">
@@ -60,6 +78,33 @@
 
       </div>
     </div>
+</div>
+<!-- Pop out -->
+
+<div id="more-info">
+  <div class="more">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1>Client Name</h1>
+        </div>
+        <div class="col-md-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae ullamcorper
+            metus. Praesent dapibus velit et feugiat dignissim. Etiam euismod orci
+            non metus gravida faucibus. Vestibulum suscipit vestibulum enim vel pretium.
+            Ut id eros iaculis, consectetur magna rutrum, imperdiet lacus. Ut dapibus
+            neque metus, quis accumsan felis viverra et. Praesent ornare elementum
+            dignissim.</p>
+            <br>
+            <button class="resume-btn">LINKEDIN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pop -->
+
+<div class="grid">
     <div class="grid-item grey">
       <div class="grid-item-content">
 
@@ -77,20 +122,47 @@
     </div>
     <div class="grid-item grey">
       <div class="grid-item-content">
-
       </div>
     </div>
-    <div class="grid-item grid-item--width2 grid-item--height2 black">
+    <div class="grid-item black">
+      <div class="grid-item-content">
+      </div>
+    </div>
+    <div class="grid-item black">
+      <div class="grid-item-content">
+      </div>
+    </div>
+    <!-- <div class="grid-item grid-item--width2 grid-item--height2 black">
       <div class="grid-item-content">
 
-      </div>
+      </div> -->
+    <!-- </div> -->
+  <div class="grid-item grey">
+    <div class="grid-item-content">
     </div>
   </div>
   <div class="grid-item grey">
     <div class="grid-item-content">
     </div>
   </div>
-
+  <div class="grid-item light-grey">
+    <div class="grid-item-content">
+    </div>
+  </div>
+  <div class="grid-item black">
+    <div class="grid-item-content">
+    </div>
+  </div>
+  <div class="grid-item black">
+    <div class="grid-item-content">
+    </div>
+  </div>
+  <div class="grid-item light-grey">
+    <div class="grid-item-content">
+    </div>
+  </div>
+</div>
+</div>
   <!-- Sections -->
   <div class="about">
     <div class="container">
@@ -116,8 +188,8 @@
           <h1>resume.</h1>
         </div>
         <div class="col-md-4">
-          <button>Printer Friendly</button><br />
-          <button>Linked In</button>
+          <button class="resume-btn">PRINTER FRIENDLY</button><br />
+          <button class="resume-btn">LINKEDIN</button>
         </div>
       </div>
     </div>
@@ -130,23 +202,27 @@
           <h1>watch from afar.</h1>
         </div>
         <div class="col-md-4">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
+          <div class="circle-group">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="circle-group">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"></script>
   <!-- Isotope -->
-  <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
-  <!-- or -->
   <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-packery@2.0/packery-mode.pkgd.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

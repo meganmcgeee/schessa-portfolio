@@ -3,29 +3,50 @@
 body {
   font-family: 'Gilroy';
 }
+// Fonts
+h1 {
+  font-style: 60.5px;
+}
 
 // Navigation
-#navigation {
-  height: 155px;
-  list-style-type: none;
-  padding-top: 73px;
-  text-align: center;
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 120px;
+        text-align: center;
+        border: 0;
+    }
+    .navbar>.container .navbar-brand-centered,
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
 
-  li {
-    color: #000;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    list-style-type: none;
-    text-decoration: none;
-    text-transform: uppercase;
+.navbar {
+  padding-top: 55px;
+  height: 155px;
+  border: 0;
+  background-color: none;
+  background-image: url('http://www.colorhexa.com/ffffff.png');
+  margin-bottom: 0;
+  li{
+    margin-right: 50px;
   }
 }
 
-li {
-  padding-right: 150px;
-}
+// li {
+  // padding-right: 150px;
+//   color: #000;
+//   display: inline-block;
+//   font-size: 12px;
+//   font-weight: 300;
+//   letter-spacing: 1.5px;
+//   list-style-type: none;
+//   text-decoration: none;
+//   text-transform: uppercase;
+// }
 
 img {
   height: 31.7px;
@@ -33,10 +54,15 @@ img {
 
 // Button Styling
 button {
-  background-color: none;
+  color:none;
+  background-color: #cfba2e;
   border: solid 5px #ffffff;
+  margin-bottom: 27.5px;
+}
+.resume-btn{
   height: 82.5px;
   width: 295px;
+  color: #fff;
 }
 
 // Section Styling
@@ -54,19 +80,30 @@ button {
   background-color: #d8f4d5;
 }
 
+.circle-group{
+  display: inline-block;
+}
 .circle {
   border: solid 5px #ffffff;
   border-radius: 50%;
   height: 82.5px;
-  padding-right: 27.5px;
   width: 82.5px;
+  display: inline-block;
+  margin-right: 27.5px;
+  margin-bottom: 87.5px;
 }
 
 // Grid Styling
 * {
   box-sizing: border-box;
 }
-
+#more-info {
+  display: none;
+  padding: 20px;
+  background: #FFF;
+  height: 500px;
+  width:750px;
+}
 // ---- grid ----
 .grid {
   max-width: 100%;
@@ -107,6 +144,11 @@ button {
   background-color: #9b9b9b;
 }
 
+.grid-item-content{
+  color: #fff;
+  text-align: center;
+  padding-top: 50%;
+}
 .grid-item--width2 {
   width: 760px;
 }

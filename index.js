@@ -7,13 +7,13 @@ $('.grid').isotope({
   itemSelector: '.grid-item'
 });
 
-$('.grid-item').click(function(){
-  var $this = $(this),
-      tileStyle = $this.hasClass('big') ? { width: 50, height: 50} : { width: 170, height: 110};
-  $this.toggleClass('big');
+Array.prototype.forEach.call(document.getElementsByClassName('grid-item'), function(gridItem) {
+  gridItem.addEventListener('click', function() {
+      div = document.getElementById('more-info');
+           div.style.display = "block";
+  }, false);
 
-  $this.find('.grid-content').stop().animate( tileStyle );
-
-  $container.isotope( 'reLayout' )
-
+  // gridItem.addEventListener('click', function() {
+  //     alert('Hello world again!!!');
+  // }, false);
 });
