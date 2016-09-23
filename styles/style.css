@@ -10,14 +10,20 @@
   display: inline-block;
   text-decoration: none;
   list-style-type: none;
-  caps
-  /*padding-left: 141px;*/
+  text-transform: uppercase;
+  font-family: 'Gilroy';
+  color: #000;
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
 }
 
 li{
   padding-right: 150px;
 }
-
+img{
+  height: 31.7px;
+}
 /*Button Styling*/
 button{
   width: 295px;
