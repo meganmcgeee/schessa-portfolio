@@ -8,15 +8,25 @@ h1 {
   font-style: 60.5px;
 }
 
+p {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+
+}
 // Navigation
 @media screen and (min-width:768px){
     .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
+        border: 0;
         display: block;
+        left: 50%;
         width: 120px;
         text-align: center;
-        border: 0;
+        position: absolute;
     }
     .navbar>.container .navbar-brand-centered,
     .navbar>.container-fluid .navbar-brand-centered {
@@ -98,6 +108,9 @@ button {
   box-sizing: border-box;
 }
 
+.grid.portfolio {
+  max-width: 75%;
+}
 // popout styling
 #more-info {
   display: none;
@@ -137,6 +150,10 @@ button {
 
 .first {
   background-color: #faba00;
+}
+
+.port {
+  background-color: #cfba2e;
 }
 
 .grey {
