@@ -13,6 +13,23 @@ p {
   font-weight: 300;
 }
 
+h2 {
+  font-family: Gilroy;
+	font-size: 36px;
+	font-weight: 800;
+	text-align: right;
+	color: #4a4a4a;
+}
+
+h3{
+  font-family: Merriweather;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 2px;
+	text-align: right;
+	color: #000000;
+}
 a {
   color: #ffffff;
   text-decoration: none;
@@ -64,6 +81,13 @@ img {
 
 // Button Styling
 button {
+  color: #cfba2e;
+  background-color: #ffffff;
+  border: solid 5px #cfba2e;
+  height: 82.5px;
+  width: 295px;
+}
+.resume button {
   color:none;
   background-color: #cfba2e;
   border: solid 5px #ffffff;
@@ -72,7 +96,12 @@ button {
 .resume-btn{
   height: 82.5px;
   width: 295px;
-  color: #fff;
+  font-family: Gilroy;
+	font-size: 23px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #cfba2e;
 }
 
 // Section Styling

@@ -8,14 +8,14 @@ $(function onPageLoaded() {
     itemSelector: '.grid-item'
   });
 
-  Array.prototype.forEach.call(document.getElementsByClassName('grid-item'), function(gridItem) {
-    gridItem.addEventListener('click', function() {
-      document.getElementById('more-info').style.display = 'block';
-    }, false);
-  });
-
-  document.getElementById('close').addEventListener('click', function() {
-    document.getElementById('more-info').style.display = 'none';
-  });
+  // Array.prototype.forEach.call(document.getElementsByClassName('grid-item'), function(gridItem) {
+  //   gridItem.addEventListener('click', function() {
+  //     document.getElementById('more-info').style.display = 'block';
+  //   }, false);
+  // });
+  //
+  // document.getElementById('close').addEventListener('click', function() {
+  //   document.getElementById('more-info').style.display = 'none';
+  // });
 
 });
