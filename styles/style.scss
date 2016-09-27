@@ -1,11 +1,6 @@
 @import 'fonts';
-$yellow: #cfba2e;
-$mustard: #faba00;
-$white: #ffffff;
-$grey: #4a4a4a;
-$black: #000000;
-$light-grey: #9b9b9b;
-$off-white: #d8f4d5;
+@import 'colors';
+
 
 body {
   font-family: 'Gilroy';
@@ -23,8 +18,6 @@ p {
 h2 {
   font-size: 36px;
   font-weight: 800;
-  text-align: right;
-  color: $grey;
   font-family: Gilroy;
 }
 
@@ -34,8 +27,6 @@ h3 {
   font-weight: 300;
   font-style: italic;
   letter-spacing: 2px;
-  text-align: right;
-  color: $black;
 }
 
 a {
@@ -130,6 +121,22 @@ button {
 }
 
 // Grid Styling
+// Hover effects
+.grid-item-content {
+    height: 383px;
+}
+.project-img, .grid-item-content:hover .project-info {
+    display: none
+}
+.grid-item-content:hover .project-img {
+    display: block
+}
+
+.project-img {
+  height: 383px;
+  background-image: url("https://placekitten.com/g/200/300");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -140,25 +147,18 @@ button {
 // ---- grid ----
 .grid {
   max-width: 100%;
-  h2,h3, a {
-    text-align: center;
-    color: $white;
-    text-decoration: none;
-  }
 }
 
 // clear fix
-.grid::after {
-  clear: both;
-  content: '';
-  display: block;
-}
+
 
 // ---- .grid-item pop----
 .grid-item {
   float: left;
   height: 383px;
   width: 380px;
+  color: $white;
+  text-align: center;
 
   .big {
     height: 110px;
@@ -187,11 +187,6 @@ button {
   background-color: $light-grey;
 }
 
-.grid-item-content{
-  text-align: center;
-  color: $white;
-  padding-top: 50%;
-}
 .grid-item--width2 {
   width: 760px;
 }
@@ -218,17 +213,4 @@ button {
   -moz-transition-property: -moz-transform, opacity;
   transition-property: transform, opacity;
   -webkit-transition-property: -webkit-transform, opacity;
-}
-// Grid Item Hover
-#hover-img img{
-  width: 100%;
-  height: 100%;
-}
-
-a>#hover-img {
-  display: none;
-}
-
-a:hover>#hover-img, h2, h3 {
-  display: block;
 }
