@@ -1,4 +1,11 @@
 @import 'fonts';
+$yellow: #cfba2e;
+$mustard: #faba00;
+$white: #ffffff;
+$grey: #4a4a4a;
+$black: #000000;
+$light-grey: #9b9b9b;
+$off-white: #d8f4d5;
 
 body {
   font-family: 'Gilroy';
@@ -14,26 +21,27 @@ p {
 }
 
 h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: right;
+  color: $grey;
   font-family: Gilroy;
-	font-size: 36px;
-	font-weight: 800;
-	text-align: right;
-	color: #4a4a4a;
 }
 
-h3{
+h3 {
   font-family: Merriweather;
-	font-size: 18px;
-	font-weight: 300;
-	font-style: italic;
-	letter-spacing: 2px;
-	text-align: right;
-	color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: right;
+  color: $black;
 }
+
 a {
-  color: #ffffff;
-  text-decoration: none;
+  color: $white;
   letter-spacing: 1.5px;
+  text-decoration: none;
 
 }
 // Navigation
@@ -53,29 +61,16 @@ a {
 }
 
 .navbar {
-  padding-top: 55px;
   height: 155px;
   border: 0;
   background-color: none;
   background-image: url('http://www.colorhexa.com/ffffff.png');
   margin-bottom: 0;
+  padding-top: 55px;
   li{
     margin-right: 50px;
-    padding-right: 122px;
   }
 }
-
-// li {
-  // padding-right: 150px;
-//   color: #000;
-//   display: inline-block;
-//   font-size: 12px;
-//   font-weight: 300;
-//   letter-spacing: 1.5px;
-//   list-style-type: none;
-//   text-decoration: none;
-//   text-transform: uppercase;
-// }
 
 img {
   height: 31.7px;
@@ -83,16 +78,16 @@ img {
 
 // Button Styling
 button {
-  color: #cfba2e;
-  background-color: #ffffff;
-  border: solid 5px #cfba2e;
+  color: $yellow;
+  background-color: $white;
+  border: solid 5px $yellow;
   height: 82.5px;
   width: 295px;
 }
 .resume button {
   color:none;
-  background-color: #cfba2e;
-  border: solid 5px #ffffff;
+  background-color: $yellow;
+  border: solid 5px $white;
   margin-bottom: 27.5px;
 }
 .resume-btn{
@@ -103,7 +98,7 @@ button {
 	font-weight: 800;
 	letter-spacing: 1px;
 	text-align: center;
-	color: #cfba2e;
+	color: $yellow;
 }
 
 // Section Styling
@@ -113,19 +108,19 @@ button {
 }
 
 .resume {
-  background-color: #cfba2e;
+  background-color: $yellow;
   max-width: 100%;
 }
 
 .contact {
-  background-color: #d8f4d5;
+  background-color: $off-white;
 }
 
 .circle-group{
   display: inline-block;
 }
 .circle {
-  border: solid 5px #ffffff;
+  border: solid 5px $white;
   border-radius: 50%;
   height: 82.5px;
   width: 82.5px;
@@ -142,22 +137,14 @@ button {
 .grid.portfolio {
   max-width: 75%;
 }
-// popout styling
-#more-info {
-  display: none;
-  padding: 20px;
-  background: #FFF;
-  height: 500px;
-  width:750px;
-}
-#close{
-  display: block;
-  padding: 5px;
-  text-align: right;
-}
 // ---- grid ----
 .grid {
   max-width: 100%;
+  h2,h3, a {
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+  }
 }
 
 // clear fix
@@ -180,32 +167,29 @@ button {
 }
 
 .first {
-  background-color: #faba00;
+  background-color: $mustard;
   text-align: center;
-   h2,h3 {
-     text-align: center;
-   }
 }
 
 .port {
-  background-color: #cfba2e;
+  background-color: $yellow;
 }
 
 .grey {
-  background-color: #4a4a4a;
+  background-color: $grey;
 }
 
 .black {
-  background-color: #000;
+  background-color: $black;
 }
 
 .light-grey {
-  background-color: #9b9b9b;
+  background-color: $light-grey;
 }
 
 .grid-item-content{
-  color: #fff;
   text-align: center;
+  color: $white;
   padding-top: 50%;
 }
 .grid-item--width2 {
@@ -219,19 +203,32 @@ button {
 //Grid Item animate
 .isotope,
 .isotope .isotope-item {
+  transition-duration: .8s;
   -webkit-transition-duration: .8s;
   -moz-transition-duration: .8s;
-  transition-duration: .8s;
 }
 
 .isotope {
+  transition-property: height, width;
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
-  transition-property: height, width;
 }
 
 .isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
   transition-property: transform, opacity;
+  -webkit-transition-property: -webkit-transform, opacity;
+}
+// Grid Item Hover
+#hover-img img{
+  width: 100%;
+  height: 100%;
+}
+
+a>#hover-img {
+  display: none;
+}
+
+a:hover>#hover-img, h2, h3 {
+  display: block;
 }
