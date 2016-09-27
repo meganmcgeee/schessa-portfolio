@@ -38,7 +38,8 @@ h3 {
 
 a {
   color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none;
+  letter-spacing: 1.5px; }
 
 @media screen and (min-width: 768px) {
   .navbar-brand-centered {
@@ -46,7 +47,6 @@ a {
     display: block;
     left: 50%;
     width: 120px;
-    text-align: center;
     position: absolute; }
 
   .navbar > .container .navbar-brand-centered,
@@ -60,7 +60,8 @@ a {
   background-image: url("http://www.colorhexa.com/ffffff.png");
   margin-bottom: 0; }
   .navbar li {
-    margin-right: 50px; }
+    margin-right: 50px;
+    padding-right: 122px; }
 
 img {
   height: 31.7px; }
@@ -146,7 +147,10 @@ button {
     width: 170px; }
 
 .first {
-  background-color: #faba00; }
+  background-color: #faba00;
+  text-align: center; }
+  .first h2, .first h3 {
+    text-align: center; }
 
 .port {
   background-color: #cfba2e; }
