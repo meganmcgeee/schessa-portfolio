@@ -30,7 +30,6 @@ h3 {
 }
 
 a {
-  color: $white;
   letter-spacing: 1.5px;
   text-decoration: none;
 
@@ -76,7 +75,6 @@ button {
   width: 295px;
 }
 .resume button {
-  color:none;
   background-color: $yellow;
   border: solid 5px $white;
   margin-bottom: 27.5px;
@@ -124,6 +122,19 @@ button {
 // Hover effects
 .grid-item-content {
     height: 383px;
+    position: relative;
+}
+// Centering text
+
+.project-info{
+  position: absolute;
+  width: 380px;
+  height: 383px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -170px;
 }
 .project-img, .grid-item-content:hover .project-info {
     display: none
@@ -131,6 +142,7 @@ button {
 .grid-item-content:hover .project-img {
     display: block
 }
+
 
 .project-img {
   height: 383px;

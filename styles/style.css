@@ -33,7 +33,6 @@ h3 {
   letter-spacing: 2px; }
 
 a {
-  color: #ffffff;
   letter-spacing: 1.5px;
   text-decoration: none; }
 
@@ -69,7 +68,6 @@ button {
   width: 295px; }
 
 .resume button {
-  color: none;
   background-color: #cfba2e;
   border: solid 5px #ffffff;
   margin-bottom: 27.5px; }
@@ -108,7 +106,17 @@ button {
   margin-bottom: 87.5px; }
 
 .grid-item-content {
-  height: 383px; }
+  height: 383px;
+  position: relative; }
+
+.project-info {
+  position: absolute;
+  width: 380px;
+  height: 383px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px; }
 
 .project-img, .grid-item-content:hover .project-info {
   display: none; }
