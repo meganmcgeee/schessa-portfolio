@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Merriweather';
   font-weight: 300;
-  src: url("../fonts/Merriweather.ttf"); }
+  src: url("../fonts/Merriweather300.ttf"); }
 body {
   font-family: 'Gilroy'; }
 
@@ -21,15 +21,15 @@ p {
   font-weight: 300; }
 
 h2 {
+  font-family: Gilroy;
   font-size: 36px;
-  font-weight: 800;
-  font-family: Gilroy; }
+  font-weight: 800; }
 
 h3 {
   font-family: Merriweather;
   font-size: 18px;
-  font-weight: 300;
   font-style: italic;
+  font-weight: 300;
   letter-spacing: 2px; }
 
 a {
@@ -41,54 +41,53 @@ a {
     border: 0;
     display: block;
     left: 50%;
-    width: 120px;
-    position: absolute; }
+    position: absolute;
+    width: 120px; }
 
   .navbar > .container .navbar-brand-centered,
   .navbar > .container-fluid .navbar-brand-centered {
     margin-left: -80px; } }
 .navbar {
-  height: 155px;
+  background-color: #ffffff;
+  background-image: none;
   border: 0;
-  background-color: none;
-  background-image: url("http://www.colorhexa.com/ffffff.png");
+  box-shadow: none;
+  height: 155px;
   margin-bottom: 0;
   padding-top: 55px; }
   .navbar li {
     margin-right: 50px; }
-
-img {
-  height: 31.7px; }
+  .navbar img {
+    height: 31.7px; }
 
 button {
-  color: #cfba2e;
   background-color: #ffffff;
   border: solid 5px #cfba2e;
+  color: #cfba2e;
   height: 82.5px;
   width: 295px; }
-
-.resume button {
-  background-color: #cfba2e;
-  border: solid 5px #ffffff;
-  margin-bottom: 27.5px; }
-
-.resume-btn {
-  height: 82.5px;
-  width: 295px;
-  font-family: Gilroy;
-  font-size: 23px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #cfba2e; }
-
-.row {
-  padding-bottom: 150px;
-  padding-top: 150px; }
 
 .resume {
   background-color: #cfba2e;
   max-width: 100%; }
+  .resume button {
+    background-color: #cfba2e;
+    border: solid 5px #ffffff;
+    margin-bottom: 27.5px; }
+
+.resume-btn {
+  color: #cfba2e;
+  font-family: Gilroy;
+  font-size: 23px;
+  font-weight: 800;
+  height: 82.5px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 295px; }
+
+.row {
+  padding-bottom: 150px;
+  padding-top: 150px; }
 
 .contact {
   background-color: #d8f4d5; }
@@ -99,57 +98,62 @@ button {
 .circle {
   border: solid 5px #ffffff;
   border-radius: 50%;
-  height: 82.5px;
-  width: 82.5px;
   display: inline-block;
+  height: 82.5px;
+  margin-bottom: 87.5px;
   margin-right: 27.5px;
-  margin-bottom: 87.5px; }
+  width: 82.5px; }
 
 .grid-item-content {
-  height: 383px;
   position: relative; }
 
-.project-info {
-  position: absolute;
-  width: 380px;
-  height: 383px;
-  padding: 20px;
-  top: 50%;
-  left: 50%;
-  margin: -70px 0 0 -170px; }
-
-.project-img, .grid-item-content:hover .project-info {
+.project-img,
+.grid-item-content:hover .project-info {
   display: none; }
 
 .grid-item-content:hover .project-img {
   display: block; }
 
 .project-img {
-  height: 383px;
-  background-image: url("https://placekitten.com/g/200/300"); }
+  background-image: url("https://placekitten.com/g/200/300");
+  height: 383px; }
 
 * {
   box-sizing: border-box; }
 
-.grid.portfolio {
-  max-width: 75%; }
-
-.grid {
-  max-width: 100%; }
-
 .grid-item {
   float: left;
-  height: 383px;
-  width: 380px;
-  color: #ffffff;
-  text-align: center; }
-  .grid-item .big {
-    height: 110px;
-    width: 170px; }
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 20%;
+  text-align: center;
+  width: 20%; }
+  .grid-item, .grid-item:hover {
+    color: #ffffff; }
+  .grid-item.big {
+    padding-bottom: 40%;
+    width: 40%; }
+  .grid-item img {
+    width: 100%; }
+  .grid-item .inner {
+    bottom: 0;
+    display: none;
+    height: auto;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 95%; }
+  .grid-item:hover img {
+    display: none; }
+  .grid-item:hover .inner {
+    display: table; }
 
 .first {
-  background-color: #faba00;
-  text-align: center; }
+  background-color: #faba00; }
 
 .port {
   background-color: #cfba2e; }
@@ -163,26 +167,19 @@ button {
 .light-grey {
   background-color: #9b9b9b; }
 
-.grid-item--width2 {
-  width: 760px; }
-
-.grid-item--height2 {
-  height: 766px; }
-
 .isotope,
 .isotope .isotope-item {
-  transition-duration: .8s;
+  -moz-transition-duration: .8s;
   -webkit-transition-duration: .8s;
-  -moz-transition-duration: .8s; }
+  transition-duration: .8s; }
 
 .isotope {
-  transition-property: height, width;
+  -moz-transition-property: height, width;
   -webkit-transition-property: height, width;
-  -moz-transition-property: height, width; }
-
-.isotope .isotope-item {
-  -moz-transition-property: -moz-transform, opacity;
-  transition-property: transform, opacity;
-  -webkit-transition-property: -webkit-transform, opacity; }
+  transition-property: height, width; }
+  .isotope .isotope-item {
+    -moz-transition-property: -moz-transform, opacity;
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity; }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,16 +16,16 @@ p {
 }
 
 h2 {
+  font-family: Gilroy;
   font-size: 36px;
   font-weight: 800;
-  font-family: Gilroy;
 }
 
 h3 {
   font-family: Merriweather;
   font-size: 18px;
-  font-weight: 300;
   font-style: italic;
+  font-weight: 300;
   letter-spacing: 2px;
 }
 
@@ -36,58 +36,69 @@ a {
 }
 // Navigation
 @media screen and (min-width:768px){
-    .navbar-brand-centered {
-        border: 0;
-        display: block;
-        left: 50%;
-        width: 120px;
-        // text-align: center;
-        position: absolute;
-    }
-    .navbar>.container .navbar-brand-centered,
-    .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -80px;
-    }
-}
+  .navbar-brand-centered {
+    border: 0;
+    display: block;
+    left: 50%;
+    position: absolute;
+    // text-align: center;
+    width: 120px;
+  }
 
-.navbar {
-  height: 155px;
-  border: 0;
-  background-color: none;
-  background-image: url('http://www.colorhexa.com/ffffff.png');
-  margin-bottom: 0;
-  padding-top: 55px;
-  li{
-    margin-right: 50px;
+  .navbar>.container .navbar-brand-centered,
+  .navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -80px;
   }
 }
 
-img {
-  height: 31.7px;
+.navbar {
+  background-color: $white;
+  background-image: none;
+  border: 0;
+  box-shadow: none;
+  height: 155px;
+  margin-bottom: 0;
+  padding-top: 55px;
+
+  li {
+    margin-right: 50px;
+  }
+
+  img {
+    height: 31.7px;
+  }
 }
+
 
 // Button Styling
 button {
-  color: $yellow;
   background-color: $white;
   border: solid 5px $yellow;
+  color: $yellow;
   height: 82.5px;
   width: 295px;
 }
-.resume button {
+
+.resume {
   background-color: $yellow;
-  border: solid 5px $white;
-  margin-bottom: 27.5px;
+  max-width: 100%;
+
+  button {
+    background-color: $yellow;
+    border: solid 5px $white;
+    margin-bottom: 27.5px;
+  }
 }
-.resume-btn{
-  height: 82.5px;
-  width: 295px;
+
+.resume-btn {
+  color: $yellow;
   font-family: Gilroy;
-	font-size: 23px;
-	font-weight: 800;
-	letter-spacing: 1px;
-	text-align: center;
-	color: $yellow;
+  font-size: 23px;
+  font-weight: 800;
+  height: 82.5px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 295px;
 }
 
 // Section Styling
@@ -96,91 +107,121 @@ button {
   padding-top: 150px;
 }
 
-.resume {
-  background-color: $yellow;
-  max-width: 100%;
-}
-
 .contact {
   background-color: $off-white;
 }
 
-.circle-group{
+.circle-group {
   display: inline-block;
 }
+
 .circle {
   border: solid 5px $white;
   border-radius: 50%;
-  height: 82.5px;
-  width: 82.5px;
   display: inline-block;
-  margin-right: 27.5px;
+  height: 82.5px;
   margin-bottom: 87.5px;
+  margin-right: 27.5px;
+  width: 82.5px;
 }
 
 // Grid Styling
 // Hover effects
 .grid-item-content {
-    height: 383px;
-    position: relative;
+  position: relative;
 }
 // Centering text
 
-.project-info{
-  position: absolute;
-  width: 380px;
-  height: 383px;
-  padding: 20px;
-  top: 50%;
-  left: 50%;
+// .project-info {
+//   height: 383px;
+//   left: 50%;
+//   margin: -70px 0 0 -170px;
+//   padding: 20px;
+//   position: absolute;
+//   top: 50%;
+//   width: 380px;
+// }
 
-  margin: -70px 0 0 -170px;
+.project-img,
+.grid-item-content:hover .project-info {
+  display: none;
 }
-.project-img, .grid-item-content:hover .project-info {
-    display: none
-}
+
 .grid-item-content:hover .project-img {
-    display: block
+  display: block;
 }
 
 
 .project-img {
+  background-image: url('https://placekitten.com/g/200/300');
   height: 383px;
-  background-image: url("https://placekitten.com/g/200/300");
 }
 
 * {
   box-sizing: border-box;
 }
 
-.grid.portfolio {
-  max-width: 75%;
-}
+
 // ---- grid ----
-.grid {
-  max-width: 100%;
-}
 
-// clear fix
-
+// .grid {
+//   max-width: 100%;
+//
+//   &.portfolio {
+//     max-width: 75%;
+//   }
+// }
 
 // ---- .grid-item pop----
 .grid-item {
-  float: left;
-  height: 383px;
-  width: 380px;
-  color: $white;
-  text-align: center;
+  &,
+  &:hover {
+    color: $white;
+  }
 
-  .big {
-    height: 110px;
-    width: 170px;
+  float: left;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 20%;
+  text-align: center;
+  width: 20%;
+
+  &.big {
+    padding-bottom: 40%;
+    width: 40%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .inner {
+    bottom: 0;
+    display: none;
+    height: auto;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 95%;
+  }
+
+  &:hover {
+    img {
+      display: none;
+    }
+
+    .inner {
+      display: table;
+    }
   }
 }
 
 .first {
   background-color: $mustard;
-  text-align: center;
 }
 
 .port {
@@ -199,30 +240,22 @@ button {
   background-color: $light-grey;
 }
 
-.grid-item--width2 {
-  width: 760px;
-}
-
-.grid-item--height2 {
-  height: 766px;
-}
-
 //Grid Item animate
 .isotope,
 .isotope .isotope-item {
-  transition-duration: .8s;
-  -webkit-transition-duration: .8s;
   -moz-transition-duration: .8s;
+  -webkit-transition-duration: .8s;
+  transition-duration: .8s;
 }
 
 .isotope {
-  transition-property: height, width;
-  -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
-}
+  -webkit-transition-property: height, width;
+  transition-property: height, width;
 
-.isotope .isotope-item {
-  -moz-transition-property: -moz-transform, opacity;
-  transition-property: transform, opacity;
-  -webkit-transition-property: -webkit-transform, opacity;
+  .isotope-item {
+    -moz-transition-property: -moz-transform, opacity;
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+  }
 }
