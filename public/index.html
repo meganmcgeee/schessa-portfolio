@@ -19,6 +19,12 @@
       crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Isotope. Put this in the head because the site doesn't display well without it being loaded -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-packery@2.0/packery-mode.pkgd.min.js"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -33,7 +39,9 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-        <div class="navbar-brand navbar-brand-centered"><img src="logo.png" alt=""></div>
+        <div class="navbar-brand navbar-brand-centered">
+          <img src="logo.png" alt="">
+        </div>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,12 +61,12 @@
   </nav>
 
   <!-- Sections -->
-  <div class="grid">
+  <section class="grid">
     <a href="#foo" class="big first grid-item">
       <img src="http://lorempixel.com/400/400/people/1" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -68,7 +76,7 @@
       <img src="http://lorempixel.com/400/400/people/2" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -78,7 +86,7 @@
       <img src="http://lorempixel.com/400/400/people/3" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -88,7 +96,7 @@
       <img src="http://lorempixel.com/400/400/people/4" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -98,7 +106,7 @@
       <img src="http://lorempixel.com/400/400/people/5" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -108,7 +116,7 @@
       <img src="http://lorempixel.com/400/400/people/6" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -118,7 +126,7 @@
       <img src="http://lorempixel.com/400/400/people/7" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -128,7 +136,7 @@
       <img src="http://lorempixel.com/400/400/people/2" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -138,7 +146,7 @@
       <img src="http://lorempixel.com/400/400/people/3" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -148,7 +156,7 @@
       <img src="http://lorempixel.com/400/400/people/4" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -158,7 +166,7 @@
       <img src="http://lorempixel.com/400/400/people/1" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -168,7 +176,7 @@
       <img src="http://lorempixel.com/400/400/people/5" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -178,7 +186,7 @@
       <img src="http://lorempixel.com/400/400/people/6" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
@@ -188,81 +196,80 @@
       <img src="http://lorempixel.com/400/400/people/7" alt="" />
       <span class="inner">
         <span class="info">
-          <h2>Unum</h2>
+          <p class="info__title">Unum</p>
           <p class="info__description">ui/ux + brand + print</p>
           <p class="info__year">2016</p>
         </span>
       </span>
     </div>
-  </div>
-  <a id="about">
-    <div class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-md-offset-3">
-            <h1>graphic. artist.</h1>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
-              ullamcorper metus. Praesent dapibus velit et feugiat dignissim. Etiam
-              euismod orci non metus gravida faucibus. Vestibulum suscipit vestibulum
-              enim vel pretium. Ut id eros iaculis, consectetur magna rutrum, imperdiet
-              lacus. Ut dapibus neque metus, quis accumsan felis viverra et. Praesent
-              ornare elementum dignissim.
-            </p>
-          </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-md-6">
+          <p class="large-text">graphic. artist.</p>
+        </div>
+        <div class="col-md-5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+            ullamcorper metus. Praesent dapibus velit et feugiat dignissim. Etiam
+            euismod orci non metus gravida faucibus. Vestibulum suscipit vestibulum
+            enim vel pretium. Ut id eros iaculis, consectetur magna rutrum, imperdiet
+            lacus. Ut dapibus neque metus, quis accumsan felis viverra et. Praesent
+            ornare elementum dignissim.
+          </p>
         </div>
       </div>
     </div>
-  </a>
-  <a id="resume">
-    <div class="resume">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-md-offset-3">
-            <h1>resume.</h1>
-          </div>
-          <div class="col-md-3">
-            <button class="resume-btn"><a href="http://schessa.com/resume.pdf">PRINTER FRIENDLY</a></button><br
-            />
-            <button class="resume-btn"><a href="https://www.linkedin.com/in/schessa">LINKEDIN</a></button>
-          </div>
+  </section>
+  <section class="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-md-6">
+          <p class="large-text">resume.</p>
+        </div>
+        <div class="col-md-5">
+          <button class="resume-btn"><a href="http://schessa.com/resume.pdf">Printer-friendly</a></button>
+          <button class="resume-btn"><a href="https://www.linkedin.com/in/schessa">LinkedIn</a></button>
         </div>
       </div>
     </div>
-  </a>
-  <a id="contact">
-    <div class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-md-offset-3">
-            <h1>say hello.</h1><br>
-            <h1>watch from afar.</h1>
-          </div>
-          <div class="col-md-5">
-            <div class="circle-group">
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-            <div class="circle-group">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-md-6">
+          <p class="large-text">say hello.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="circle-group">
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-md-6">
+          <p class="large-text">watch from afar.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="circle-group">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+      </div>
     </div>
-  </a>
+  </section>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"></script>
-  <!-- Isotope -->
-  <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
-  <script src="https://unpkg.com/isotope-packery@2.0/packery-mode.pkgd.min.js"></script>
-  <script src="index.js"></script>
 </body>
 
 </html>

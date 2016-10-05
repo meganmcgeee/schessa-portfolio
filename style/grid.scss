@@ -1,0 +1,121 @@
+// Hover effects
+.grid-item-content {
+  position: relative;
+}
+
+.project-img,
+.grid-item-content:hover .project-info {
+  display: none;
+}
+
+.grid-item-content:hover .project-img {
+  display: block;
+}
+
+.project-img {
+  background-image: url('https://placekitten.com/g/200/300');
+  height: 383px;
+}
+
+.grid-item {
+  float: left;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 20%;
+  text-align: center;
+  width: 20%;
+
+  &,
+  &:hover {
+    color: $white;
+  }
+
+  &.big {
+    padding-bottom: 40%;
+    width: 40%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .inner {
+    bottom: 0;
+    display: none;
+    height: auto;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 95%;
+  }
+
+  &:hover {
+    img {
+      display: none;
+    }
+
+    .inner {
+      display: table;
+    }
+  }
+}
+
+.first {
+  background-color: $mustard;
+}
+
+.port {
+  background-color: $yellow;
+}
+
+.grey {
+  background-color: $grey;
+}
+
+.black {
+  background-color: $black;
+}
+
+.light-grey {
+  background-color: $light-grey;
+}
+
+// Grid item details
+.info {
+  &__title {
+    font-weight: 800;
+    letter-spacing: 2.6px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: 'Merriweather';
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  &__year {
+    letter-spacing: 2.6px;
+  }
+}
+
+//Grid Item animate
+.isotope,
+.isotope .isotope-item {
+  transition-duration: .8s;
+}
+
+.isotope {
+  transition-property: height, width;
+
+  .isotope-item {
+    transition-property: transform, opacity;
+  }
+}

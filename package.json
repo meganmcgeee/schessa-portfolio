@@ -19,6 +19,10 @@
   "homepage": "https://github.com/MakeAppsDevshop/schessa-portfolio#readme",
   "devDependencies": {
     "eslint": "^3.6.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
     "htmlhint": "^0.9.13"
   },
   "dependencies": {
