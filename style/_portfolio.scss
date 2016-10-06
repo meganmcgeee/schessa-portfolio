@@ -1,0 +1,100 @@
+.portfolio-header {
+  padding-bottom: 92px;
+  padding-top: 50px;
+
+  .more,
+  .more__description p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.more {
+  color: $grey;
+  padding-bottom: 120px;
+  padding-top: 50px;
+  width: 80%;
+
+  &__title {
+    text-align: right;
+  }
+
+  &__description {
+    line-height: 1.5;
+
+    p {
+      margin-bottom: 40px;
+    }
+
+    button {
+      background-color: transparent;
+      border: solid 5px $yellow;
+      color: $yellow;
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      max-width: 295px;
+      padding: 28px 0;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
+}
+
+.brand-new-theater,
+.fitster {
+  .grid {
+    width: 80%;
+  }
+
+  .grid-item {
+    padding-bottom: 25%;
+    width: 25%;
+
+    &.big {
+      padding-bottom: 50%;
+      width: 50%;
+    }
+  }
+}
+
+.other {
+  .grid {
+    width: 60%;
+  }
+
+  .grid-item {
+    padding-bottom: 33.33%;
+    width: 33.33%;
+  }
+}
+
+.venture-city,
+.illustration {
+  .grid {
+    margin-left: 20%;
+  }
+
+  .grid-item {
+    padding-bottom: 25%;
+    width: 25%;
+
+    &.big {
+      padding-bottom: 50%;
+      width: 50%;
+    }
+  }
+}
+
+.resume-portfolio {
+  padding-bottom: 62.5px;
+
+  .logo {
+    padding-top: 240px;
+    text-align: center;
+
+    img {
+      width: 170px;
+    }
+  }
+}

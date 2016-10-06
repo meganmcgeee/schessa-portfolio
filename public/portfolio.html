@@ -19,6 +19,12 @@
       crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Isotope -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-packery@2.0/packery-mode.pkgd.min.js"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -33,7 +39,11 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-        <div class="navbar-brand navbar-brand-centered"><img src="logo.png" alt=""></div>
+        <div class="navbar-brand navbar-brand-centered">
+          <a href="/">
+            <img src="logo.png" alt="Logo" />
+          </a>
+        </div>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,379 +61,413 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
-  <div class="portfolio-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-md-offset-1">
-          <h1>portfolio.</h1>
-        </div>
-        <div class="col-md-4">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae ullamcorper
-            metus.</p>
+
+  <header class="portfolio-header">
+    <div class="more">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 more__title">
+            <h1>portfolio.</h1>
+          </div>
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+              ullamcorper metus.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </header>
+
   <!-- Brand New Theater -->
-  <a id="bnt"></a>
+  <section class="brand-new-theater" id="brand-new-theater">
     <div class="grid">
-      <a href="#foo" class="big first grid-item">
+      <a href="#foo" class="big mustard grid-item">
         <img src="http://lorempixel.com/400/400/people/1" alt="" />
         <span class="inner">
-          <span class="info">
-          </span>
+            <span class="info">
+            </span>
         </span>
       </a>
       <div class="grey grid-item">
         <img src="http://lorempixel.com/400/400/people/2" alt="" />
         <span class="inner">
-          <span class="info">
-          </span>
+            <span class="info">
+            </span>
         </span>
       </div>
       <div class="black grid-item">
         <img src="http://lorempixel.com/400/400/people/3" alt="" />
         <span class="inner">
-          <span class="info">
-          </span>
+            <span class="info">
+            </span>
         </span>
       </div>
       <div class="light-grey grid-item">
         <img src="http://lorempixel.com/400/400/people/4" alt="" />
         <span class="inner">
-          <span class="info">
-          </span>
+            <span class="info">
+            </span>
         </span>
       </div>
-      <div class="light-grey grid-item">
+      <div class="grey grid-item">
         <img src="http://lorempixel.com/400/400/people/5" alt="" />
         <span class="inner">
-          <span class="info">
-          </span>
+            <span class="info">
+            </span>
         </span>
       </div>
     </div>
     <div class="more">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-
-          <div class="col-md-4">
+          <div class="col-md-6 more__title">
             <h2>brand new theater</h2>
             <h3>ui/ux + brand + print</h3>
           </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
-              ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Etiam vitae ullamcorper metus.</p>
-            <br>
-            <button class="resume-btn">BNT WEBSITE</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- Troy -->
-  <a id="troy">
-    <div class="grid">
-      <div class="light-grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/4" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-      <div class="grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/2" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-      <a href="#foo" class="big first grid-item">
-        <img src="http://lorempixel.com/400/400/people/1" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </a>
-      <div class="black grid-item">
-        <img src="http://lorempixel.com/400/400/people/3" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-
-      <div class="light-grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/5" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-
-      <div class="grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/2" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-      <div class="light-grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/5" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-    </div>
-    <div class="more">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-4">
-            <h2>troy</h2>
-            <h3>ui/ux + brand + print</h3>
-          </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
-              ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Etiam vitae ullamcorper metus.</p>
-            <br>
-            <button class="resume-btn">TROY WEBSITE</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </a>
-
-  <!-- Other Brands -->
-  <a id="other">
-    <div class="grid">
-        <div class="light-grey grid-item">
-          <img src="http://lorempixel.com/400/400/people/4" alt="" />
-          <span class="inner">
-            <span class="info">
-            </span>
-          </span>
-        </div>
-        <div class="grey grid-item">
-          <img src="http://lorempixel.com/400/400/people/2" alt="" />
-          <span class="inner">
-            <span class="info">
-            </span>
-          </span>
-        </div>
-        <div class="light-grey grid-item">
-          <img src="http://lorempixel.com/400/400/people/4" alt="" />
-          <span class="inner">
-            <span class="info">
-            </span>
-          </span>
-        </div>
-        <div class="grey grid-item">
-          <img src="http://lorempixel.com/400/400/people/2" alt="" />
-          <span class="inner">
-            <span class="info">
-            </span>
-          </span>
-        </div>
-        <div class="light-grey grid-item">
-          <img src="http://lorempixel.com/400/400/people/4" alt="" />
-          <span class="inner">
-            <span class="info">
-            </span>
-          </span>
-        </div>
-        <div class="grey grid-item">
-          <img src="http://lorempixel.com/400/400/people/2" alt="" />
-          <span class="inner">
-            <span class="info">
-            </span>
-          </span>
-        </div>
-      </div>
-    <div class="more">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-4">
-            <h2>other brands</h2>
-            <h3>ui/ux + brand + print</h3>
-          </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
-              ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Etiam vitae ullamcorper metus.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </a>
-
-  <!-- Unum -->
-  <a id="unum">
-    <div class="grid">
-      <div class="light-grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/4" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-      <a href="#foo" class="big first grid-item">
-        <img src="http://lorempixel.com/400/400/people/1" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </a>
-      <div class="grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/2" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-      <div class="black grid-item">
-        <img src="http://lorempixel.com/400/400/people/3" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-
-      <div class="light-grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/5" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-
-      <div class="grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/2" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-      <div class="light-grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/5" alt="" />
-        <span class="inner">
-          <span class="info">
-          </span>
-        </span>
-      </div>
-    </div>
-    <div class="more">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-4">
-            <h2>unum</h2>
-            <h3>ui/ux + brand + print</h3>
-          </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
               ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Etiam vitae ullamcorper metus.
             </p>
-            <br>
-            <button class="resume-btn">APP STORE</button>
+            <button>BNT Website</button>
           </div>
         </div>
       </div>
     </div>
-  </a>
+  </section>
 
-  <!-- Venture City -->
-  <a id="venture-city">
-    <div class="grid" style="margin-left: 28%;">
-      <div class="grid-item light-grey">
-        <div class="grid-item-content">
-        </div>
+  <!-- Troy -->
+  <section class="troy" id="troy">
+    <div class="grid">
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/4" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item grid-item--width2 grid-item--height2" style="background-color: #cfba2e;">
-        <div class="grid-item-content">
-        </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item grey">
-        <div class="grid-item-content">
-        </div>
+      <a href="#foo" class="big mustard grid-item">
+        <img src="http://lorempixel.com/400/400/people/1" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </a>
+      <div class="black grid-item">
+        <img src="http://lorempixel.com/400/400/people/3" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item grey">
-        <div class="grid-item-content">
-        </div>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item light-grey">
-        <div class="grid-item-content">
-        </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
     </div>
     <div class="more">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
+          <div class="col-md-6 more__title">
+            <h2>troy</h2>
+            <h3>ui/ux + brand + print</h3>
+          </div>
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+              ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Etiam vitae ullamcorper metus.
+            </p>
+            <button>Troy Camp Website</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-md-4">
+  <!-- Other Brands -->
+  <section class="other" id="other">
+    <div class="grid">
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/4" alt="" />
+        <span class="inner">
+            <span class="info">
+            </span>
+        </span>
+      </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+            <span class="info">
+            </span>
+        </span>
+      </div>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/4" alt="" />
+        <span class="inner">
+            <span class="info">
+            </span>
+        </span>
+      </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+            <span class="info">
+            </span>
+        </span>
+      </div>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/4" alt="" />
+        <span class="inner">
+            <span class="info">
+            </span>
+        </span>
+      </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+            <span class="info">
+            </span>
+        </span>
+      </div>
+    </div>
+    <div class="more">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 more__title">
+            <h2>other brands</h2>
+            <h3>ui/ux + brand + print</h3>
+          </div>
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+              ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Etiam vitae ullamcorper metus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unum -->
+  <section class="unum" id="unum">
+    <div class="grid">
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/4" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <a href="#foo" class="big mustard grid-item">
+        <img src="http://lorempixel.com/400/400/people/1" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </a>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <div class="black grid-item">
+        <img src="http://lorempixel.com/400/400/people/3" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class="more">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 more__title">
+            <h2>unum</h2>
+            <h3>ui/ux + brand + print</h3>
+          </div>
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+              ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Etiam vitae ullamcorper metus.
+            </p>
+            <button>App Store</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venture City -->
+  <section class="venture-city" id="venture-city">
+    <div class="grid">
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/4" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <a class="big mustard grid-item">
+        <img src="http://lorempixel.com/400/400/people/1" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </a>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/3" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class="more">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 more__title">
             <h2>venture city</h2>
             <h3>ui/ux + brand + print</h3>
           </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
               ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Etiam vitae ullamcorper metus.</p>
-            <br>
-            <button class="resume-btn">APP STORE</button>
+              elit. Etiam vitae ullamcorper metus.
+            </p>
+            <button>App Store</button>
           </div>
         </div>
       </div>
     </div>
-  </a>
-  <!-- Fitster -->
-  <a id="fitster">
-    <div class="grid">
-      <div class="grid-item grid-item--width2 grid-item--height2" style="background-color: #cfba2e;">
-        <div class="grid-item-content">
-        </div>
-      </div>
-      <div class="grid-item grey">
-        <div class="grid-item-content">
-        </div>
-      </div>
-      <div class="grid-item black">
-        <div class="grid-item-content">
+  </section>
 
-        </div>
+  <!-- Fitster -->
+  <section class="fitster" id="fitster">
+    <div class="grid">
+      <a href="#foo" class="big mustard grid-item">
+        <img src="http://lorempixel.com/400/400/people/1" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </a>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item light-grey">
-        <div class="grid-item-content">
-        </div>
+      <div class="black grid-item">
+        <img src="http://lorempixel.com/400/400/people/3" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item grey">
-        <div class="grid-item-content">
-        </div>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/4" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </div>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
     </div>
     <div class="more">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-
-          <div class="col-md-4">
+          <div class="col-md-6 more__title">
             <h2>fitster</h2>
             <h3>ui/ux + brand + print</h3>
           </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
               ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Etiam vitae ullamcorper metus.</p>
-            <br>
-            <button class="resume-btn">APP STORE</button>
+              elit. Etiam vitae ullamcorper metus.
+            </p>
+            <button>App Store</button>
           </div>
         </div>
       </div>
     </div>
-  </a>
+  </section>
+
   <!-- Korean Studies Institute -->
   <a id="koreanstudies">
     <div class="grid">
@@ -434,7 +478,7 @@
           </span>
         </span>
       </div>
-      <a href="#foo" class="big first grid-item">
+      <a class="big mustard grid-item">
         <img src="http://lorempixel.com/400/400/people/1" alt="" />
         <span class="inner">
           <span class="info">
@@ -449,28 +493,28 @@
         </span>
       </div>
       <div class="light-grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <img src="http://lorempixel.com/400/400/people/3" alt="" />
         <span class="inner">
           <span class="info">
           </span>
         </span>
       </div>
       <div class="grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <img src="http://lorempixel.com/400/400/people/5" alt="" />
         <span class="inner">
           <span class="info">
           </span>
         </span>
       </div>
       <div class="light-grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
         <span class="inner">
           <span class="info">
           </span>
         </span>
       </div>
       <div class="grey grid-item">
-        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <img src="http://lorempixel.com/400/400/people/3" alt="" />
         <span class="inner">
           <span class="info">
           </span>
@@ -478,19 +522,19 @@
       </div>
     </div>
     <div class="more">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-
-          <div class="col-md-4">
+          <div class="col-md-6 more__title">
             <h2>korean studies institute</h2>
             <h3>ui/ux + brand + print</h3>
           </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
               ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Etiam vitae ullamcorper metus.</p>
-            <br>
-            <button class="resume-btn"></button>
+              elit. Etiam vitae ullamcorper metus.
+            </p>
+            <button>App Store</button>
           </div>
         </div>
       </div>
@@ -498,74 +542,87 @@
   </a>
 
   <!-- Illustration -->
-  <a id="illustration">
-    <div class="grid" style="margin-left: 28%;">
-      <div class="grid-item light-grey">
-        <div class="grid-item-content">
-        </div>
+  <section class="illustration" id="illustration">
+    <div class="grid">
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/4" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item grid-item--width2 grid-item--height2" style="background-color: #cfba2e;">
-        <div class="grid-item-content">
-        </div>
+      <a class="big mustard grid-item">
+        <img src="http://lorempixel.com/400/400/people/1" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
+      </a>
+      <div class="light-grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/2" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item grey">
-        <div class="grid-item-content">
-        </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/3" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
-      <div class="grid-item grey">
-        <div class="grid-item-content">
-        </div>
-      </div>
-      <div class="grid-item light-grey">
-        <div class="grid-item-content">
-        </div>
+      <div class="grey grid-item">
+        <img src="http://lorempixel.com/400/400/people/5" alt="" />
+        <span class="inner">
+          <span class="info">
+          </span>
+        </span>
       </div>
     </div>
-
     <div class="more">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-
-          <div class="col-md-4">
+          <div class="col-md-6 more__title">
             <h2>illustration</h2>
             <h3>ui/ux + brand + print</h3>
           </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
+          <div class="col-md-5 col-md-offset-1 more__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
               ullamcorper metus. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Etiam vitae ullamcorper metus.</p>
-            <br>
-            <button class="resume-btn">APP STORE</button>
+              elit. Etiam vitae ullamcorper metus.
+            </p>
+            <button>App Store</button>
           </div>
         </div>
       </div>
     </div>
-  </a>
-
-
-  <div class="resume">
+  </section>
+  <div class="resume resume-portfolio">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-md-offset-3">
           <h1>resume.</h1>
         </div>
         <div class="col-md-3">
-          <button class="resume-btn"><a href="http://schessa.com/resume.pdf">PRINTER FRIENDLY</a></button><br
-          />
+          <button class="resume-btn"><a href="http://schessa.com/resume.pdf">PRINTER FRIENDLY</a></button>
           <button class="resume-btn"><a href="https://www.linkedin.com/in/schessa">LINKEDIN</a></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 logo">
+          <a href="/">
+            <img src="logo.png" alt="Logo">
+          </a>
         </div>
       </div>
     </div>
   </div>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
-  <!-- Isotope -->
-  <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
-  <script src="https://unpkg.com/isotope-packery@2.0/packery-mode.pkgd.min.js"></script>
-  <script src="index.js"></script>
+      crossorigin="anonymous" async></script>
 </body>
 
 </html>
