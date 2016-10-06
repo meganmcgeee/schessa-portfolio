@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gilroy';
+}
+
+// Text
+h1 {
+  font-style: 60.5px;
+}
+
+p {
+  font-size: 23px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: Merriweather;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+a {
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+.large-text {
+  font-size: 60.5px;
+  text-align: right;
+}
