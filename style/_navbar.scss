@@ -22,11 +22,21 @@
   padding-bottom: 60px;
   padding-top: 55px;
 
+  a {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
   li {
     margin-right: 50px;
+    text-transform: uppercase;
   }
 
   img {
     height: 31.7px;
   }
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $black;
 }

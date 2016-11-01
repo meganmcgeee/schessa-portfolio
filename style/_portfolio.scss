@@ -1,3 +1,34 @@
+@mixin button($color) {
+  button {
+    border-color: $color;
+    color: $color;
+  }
+}
+
+@mixin quarter-grid-items {
+  .grid-item {
+    padding-bottom: 25%;
+    width: 25%;
+
+    &.big {
+      padding-bottom: 50%;
+      width: 50%;
+    }
+  }
+}
+
+@mixin third-grid-items {
+  .grid-item {
+    padding-bottom: 33%;
+    width: 33%;
+
+    &.big {
+      padding-bottom: 66%;
+      width: 66%;
+    }
+  }
+}
+
 .portfolio-header {
   padding-bottom: 92px;
   padding-top: 50px;
@@ -25,69 +56,51 @@
     p {
       margin-bottom: 40px;
     }
-
-    button {
-      background-color: transparent;
-      border: solid 5px $yellow;
-      color: $yellow;
-      font-size: 23px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      max-width: 295px;
-      padding: 28px 0;
-      text-transform: uppercase;
-      width: 100%;
-    }
   }
+}
+
+.unum {
+  @include button($black);
+}
+
+.illustration {
+  @include button($orange);
 }
 
 .brand-new-theater,
 .fitster {
+  @include quarter-grid-items;
   .grid {
     width: 80%;
   }
-
-  .grid-item {
-    padding-bottom: 25%;
-    width: 25%;
-
-    &.big {
-      padding-bottom: 50%;
-      width: 50%;
-    }
-  }
 }
 
-.other {
+.mood-feed {
+  @include third-grid-items;
   .grid {
     width: 60%;
   }
-
-  .grid-item {
-    padding-bottom: 33.33%;
-    width: 33.33%;
-  }
 }
 
-.venture-city,
-.illustration {
+.troy-camp {
+  @include button($maroon);
+}
+
+.venture-city {
+  @include button($fuschia);
+  @include third-grid-items;
   .grid {
-    margin-left: 20%;
-  }
-
-  .grid-item {
-    padding-bottom: 25%;
-    width: 25%;
-
-    &.big {
-      padding-bottom: 50%;
-      width: 50%;
-    }
+    margin-left: 40%;
   }
 }
 
 .resume-portfolio {
+  background-color: $purplish;
   padding-bottom: 62.5px;
+
+  .large-text {
+    color: $white;
+  }
 
   .logo {
     padding-top: 240px;

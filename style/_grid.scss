@@ -6,11 +6,6 @@
   text-align: center;
   width: 20%;
 
-  &,
-  &:hover {
-    color: $white;
-  }
-
   &.big {
     padding-bottom: 40%;
     width: 40%;
@@ -36,7 +31,11 @@
 
   &:hover {
     img {
-      opacity: .15;
+      opacity: .4;
+    }
+
+    p {
+      color: $white;
     }
 
     .inner {
@@ -46,30 +45,32 @@
 }
 
 .mustard {
-  background-color: $mustard;
+  background-color: $purplish;
 }
 
 .port {
-  background-color: $yellow;
+  background-color: $purplish;
 }
 
 .grey {
-  background-color: $grey;
+  background-color: $purplish;
 }
 
 .black {
-  background-color: $black;
+  background-color: $purplish;
 }
 
 .light-grey {
-  background-color: $light-grey;
+  background-color: $purplish;
 }
 
 // Grid item details
 .info {
   &__title {
+    font-size: 23px;
     font-weight: 800;
     letter-spacing: 2.6px;
+    line-height: normal;
     margin-bottom: 15px;
     text-transform: uppercase;
   }
