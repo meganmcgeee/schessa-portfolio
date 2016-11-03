@@ -12,6 +12,8 @@
   }
 
   img {
+    transition: filter .1s ease-in-out,
+                opacity .1s ease-in-out;
     width: 100%;
   }
 
@@ -31,6 +33,7 @@
 
   &:hover {
     img {
+      filter: blur(5px);
       opacity: .4;
     }
 
