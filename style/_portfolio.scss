@@ -1,5 +1,5 @@
 @mixin button($color) {
-  button {
+  .button {
     border-color: $color;
     color: $color;
   }
