@@ -1,4 +1,5 @@
 .grid-item {
+  background-color: $purplish;
   float: left;
   height: 0;
   overflow: hidden;
@@ -45,26 +46,6 @@
       display: table;
     }
   }
-}
-
-.mustard {
-  background-color: $purplish;
-}
-
-.port {
-  background-color: $purplish;
-}
-
-.grey {
-  background-color: $purplish;
-}
-
-.black {
-  background-color: $purplish;
-}
-
-.light-grey {
-  background-color: $purplish;
 }
 
 // Grid item details
